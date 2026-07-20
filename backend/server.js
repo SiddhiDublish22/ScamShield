@@ -1,19 +1,35 @@
 const express = require("express");
-const dotenv = require("dotenv");
+require("dotenv").config();
+
 const connectDB = require("./config/db");
-
-dotenv.config();
-
-connectDB();
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("ScamShield Backend Running...");
-});
 
-const PORT = process.env.PORT || 5000;
+// Middleware
+app.use(express.json());
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+
+// Database connection
+connectDB();
+
+
+// Routes
+app.use("/api/auth", require("./routes/authRoutes"));
+
+app.use("/api/user", require("./routes/userRoutes"));
+
+const scamRoutes=require("./routes/scamRoutes");
+
+app.use(
+"/api/scam",
+scamRoutes
+);
+
+
+// Server start
+app.listen(5000, () => {
+
+    console.log("Server running on port 5000");
+
 });
