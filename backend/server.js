@@ -5,13 +5,16 @@ const connectDB = require("./config/db");
 
 const app = express();
 
-
+const cors = require("cors");
 // Middleware
 app.use(express.json());
 
 
 // Database connection
 connectDB();
+
+app.use(cors());
+app.use(express.json());
 
 
 // Routes
