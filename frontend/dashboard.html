@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | ScamShield</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shield-halved"></i>
+        ScamShield
+
+    </div>
+    
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+
+        <li onclick="document.getElementById('messageInput').scrollIntoView()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Analyzer
+        </li>
+
+
+        <li onclick="window.location.href='history.html'">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            History
+        </li>
+
+
+        <li onclick="document.querySelector('.profile').scrollIntoView()">
+            <i class="fa-solid fa-user"></i>
+            Profile
+        </li>
+
+
+        <li id="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+
+    </ul>
+
+
+</aside>
+
+
+
+
+
+<!-- Main Content -->
+
+<main class="main">
+
+
+<header>
+
+<h1>
+Welcome Back, <span id="username">User</span> 👋
+</h1>
+
+<p>
+Your personal scam protection dashboard
+</p>
+
+
+</header>
+
+
+
+
+
+<!-- Stats -->
+
+<section class="stats">
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Total Checks</h3>
+
+<h2 id="totalChecks">0</h2>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h3>Safe</h3>
+
+<h2 id="safeChecks">0</h2>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3>Suspicious</h3>
+
+<h2 id="mediumChecks">0</h2>
+
+</div>
+
+
+
+<div class="stat-card danger">
+
+<i class="fa-solid fa-skull-crossbones"></i>
+
+<h3>High Risk</h3>
+
+<h2 id="highChecks">0</h2>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- Analyzer -->
+
+
+<section class="panel">
+
+
+<h2>
+<i class="fa-solid fa-shield-virus"></i>
+ Scam Analyzer
+</h2>
+
+
+<textarea 
+id="messageInput"
+placeholder="Paste suspicious message, email or link here..."
+></textarea>
+
+
+
+<button id="analyzeBtn">
+
+Analyze
+
+</button>
+
+
+<div id="resultBox">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Recent Activity -->
+
+
+<section class="panel">
+
+
+<h2>
+<i class="fa-solid fa-clock"></i>
+Recent Activity
+</h2>
+
+
+
+<div class="activity">
+
+
+<p>
+Fake lottery message
+<span class="high">
+High Risk
+</span>
+</p>
+
+
+
+<p>
+Unknown shopping website
+<span class="medium">
+Suspicious
+</span>
+</p>
+
+
+
+<p>
+Bank verification message
+<span class="safe">
+Safe
+</span>
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- Profile -->
+
+
+<section class="panel profile">
+
+
+<h2>
+<i class="fa-solid fa-user"></i>
+Profile
+</h2>
+
+
+
+<p>
+Name:
+<span id="profileName"></span>
+</p>
+
+
+<p>
+Email:
+<span id="profileEmail"></span>
+</p>
+</section>
+
+</main>
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
