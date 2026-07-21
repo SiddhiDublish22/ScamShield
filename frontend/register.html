@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ScamShield</title>
+
+    <link rel="stylesheet" href="css/auth.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i>
+                ScamShield
+            </div>
+
+            <h2>Create Account</h2>
+            <p>Join ScamShield and stay protected.</p>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <div id="message"></div>
+
+            <div class="bottom-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+</html>
