@@ -2,7 +2,7 @@
 
 ScamShield is a full-stack web application that helps users detect potentially fraudulent messages, analyze risk levels, and maintain a history of scam reports through an interactive dashboard.
 
----
+
 
 ## Why I Built This Project
 
@@ -10,7 +10,7 @@ Online scams are becoming increasingly common through SMS, emails, calls, and so
 
 The project focuses on authentication, API development, database integration, dashboard analytics, and scam detection using custom risk analysis logic.
 
----
+
 
 ## Features
 
@@ -60,7 +60,7 @@ The project focuses on authentication, API development, database integration, da
 * Persistent Report Storage
 * User-Specific Data Management
 
----
+
 
 ## Tech Stack
 
@@ -87,7 +87,7 @@ The project focuses on authentication, API development, database integration, da
 * JWT (JSON Web Token)
 * bcrypt.js
 
----
+
 
 ## API Endpoints
 
@@ -112,7 +112,7 @@ The project focuses on authentication, API development, database integration, da
 | GET    | /api/scam/history | Get scam report history    |
 | GET    | /api/scam/stats   | Get dashboard statistics   |
 
----
+
 
 ## Project Structure
 
@@ -140,7 +140,7 @@ ScamShield
 └── README.md
 ```
 
----
+
 
 ## Implemented Features
 
@@ -168,13 +168,13 @@ ScamShield
 
 ✅ User Profile Section
 
----
+
 
 ## Screenshots
 
 Project screenshots will be added after deployment.
 
----
+
 
 ## Future Improvements
 
@@ -187,7 +187,7 @@ Project screenshots will be added after deployment.
 * Export Reports Feature
 * Machine Learning Integration
 
----
+
 
 ## Learning Outcomes
 
@@ -202,7 +202,7 @@ Through this project I learned:
 * Git & GitHub Workflow
 * Full-Stack Project Deployment
 
----
+
 
 ## Author
 
@@ -210,6 +210,6 @@ Through this project I learned:
 
 Full-Stack Security Focused Project built to strengthen backend development, authentication, database management, and real-world problem-solving skills.
 
----
+
 
 ⭐ If you like this project, consider giving it a star on GitHub.
