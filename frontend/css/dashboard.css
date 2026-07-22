@@ -498,8 +498,32 @@ color:#60a5fa;
 }
 
 
+.safe,
+.medium,
+.high{
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.safe{
+    background: #166534;
+}
+
+.medium{
+    background: #854d0e;
+}
 
 .high{
+    background: #7f1d1d;
+}
+
+/* .high{
 
 color:#ef4444;
 
@@ -525,4 +549,4 @@ color:#22c55e;
 
 font-weight:bold;
 
-}
+} */
