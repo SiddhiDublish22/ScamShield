@@ -1,31 +1,76 @@
 # ScamShield
 
-ScamShield is a full-stack web application that helps users identify potentially fraudulent messages and maintain a history of scam reports.
+ScamShield is a full-stack web application that helps users detect potentially fraudulent messages, analyze risk levels, and maintain a history of scam reports through an interactive dashboard.
+
+---
 
 ## Why I Built This Project
 
-Online scams are becoming increasingly common through SMS, emails, calls, and social media. I built ScamShield to learn backend development, authentication, database integration, and API development while working on a real-world problem.
+Online scams are becoming increasingly common through SMS, emails, calls, and social media platforms. I built ScamShield to gain hands-on experience with full-stack development while solving a real-world security problem.
 
-The goal of this project is to analyze suspicious messages, classify their risk level, and help users keep track of scam reports in one place.
+The project focuses on authentication, API development, database integration, dashboard analytics, and scam detection using custom risk analysis logic.
+
+---
 
 ## Features
 
-* User Registration and Login
-* Secure Authentication using JWT
+### Authentication
+
+* User Registration
+* User Login
+* JWT Authentication
 * Protected Routes
-* Scam Message Detection
-* Risk Classification (High, Medium, Low)
-* Scam Report History
-* Dashboard Statistics
-* MongoDB Atlas Integration
+* Secure Password Hashing with bcrypt.js
+
+### Scam Detection
+
+* Analyze suspicious messages
+* Risk Classification:
+
+  * HIGH Risk
+  * MEDIUM Risk
+  * LOW Risk
+* Risk Score Generation
+* Detection Reason Explanation
+
+### Dashboard
+
+* Total Scam Checks
+* High Risk Reports Count
+* Medium Risk Reports Count
+* Safe Reports Count
+* Real-Time Statistics
+
+### History Tracking
+
+* View Previous Reports
+* Risk Level Tracking
+* Message Analysis History
+* Timestamped Records
+
+### User Profile
+
+* Logged-in User Information
+* Protected User Dashboard
+* Secure Session Management
+
+### Database Integration
+
+* MongoDB Atlas Cloud Database
+* Persistent Report Storage
+* User-Specific Data Management
+
+---
 
 ## Tech Stack
 
 ### Frontend
 
-* HTML
-* CSS
-* JavaScript
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* Responsive UI Design
+* Font Awesome Icons
 
 ### Backend
 
@@ -35,34 +80,39 @@ The goal of this project is to analyze suspicious messages, classify their risk 
 ### Database
 
 * MongoDB Atlas
+* Mongoose
 
-### Authentication
+### Authentication & Security
 
 * JWT (JSON Web Token)
 * bcrypt.js
+
+---
 
 ## API Endpoints
 
 ### Authentication
 
-| Method | Endpoint             | Description                 |
-| ------ | -------------------- | --------------------------- |
-| POST   | `/api/auth/register` | Register a new user         |
-| POST   | `/api/auth/login`    | Login and receive JWT token |
+| Method | Endpoint           | Description                 |
+| ------ | ------------------ | --------------------------- |
+| POST   | /api/auth/register | Register a new user         |
+| POST   | /api/auth/login    | Login and receive JWT token |
 
 ### User
 
-| Method | Endpoint            | Description                |
-| ------ | ------------------- | -------------------------- |
-| GET    | `/api/user/profile` | Get logged-in user profile |
+| Method | Endpoint          | Description                |
+| ------ | ----------------- | -------------------------- |
+| GET    | /api/user/profile | Get logged-in user profile |
 
 ### Scam Detection
 
-| Method | Endpoint            | Description                                  |
-| ------ | ------------------- | -------------------------------------------- |
-| POST   | `/api/scam/check`   | Analyze a message and generate a scam report |
-| GET    | `/api/scam/history` | View previously analyzed scam reports        |
-| GET    | `/api/scam/stats`   | Get dashboard statistics and report counts   |
+| Method | Endpoint          | Description                |
+| ------ | ----------------- | -------------------------- |
+| POST   | /api/scam/check   | Analyze suspicious message |
+| GET    | /api/scam/history | Get scam report history    |
+| GET    | /api/scam/stats   | Get dashboard statistics   |
+
+---
 
 ## Project Structure
 
@@ -75,46 +125,91 @@ ScamShield
 │   ├── middleware
 │   ├── models
 │   ├── routes
+│   ├── utils
 │   └── server.js
 │
 ├── frontend
+│   ├── css
+│   ├── js
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── history.html
 │
 └── README.md
 ```
 
-## Current Status
+---
 
-### Backend Completed
+## Implemented Features
 
-* MongoDB Atlas Connection
-* User Authentication
-* JWT Authorization
-* Protected Routes
-* Scam Detection API
-* Scam Report Storage
-* Scam History API
-* Dashboard Statistics API
+✅ MongoDB Atlas Connection
 
-### Frontend Development In Progress
+✅ User Registration & Login
 
-The frontend will be built using HTML, CSS, and JavaScript and will include:
+✅ JWT Authorization
 
-* Login Page
-* Registration Page
-* Dashboard
-* Scam Checker
-* History Page
+✅ Protected APIs
+
+✅ Scam Detection Engine
+
+✅ Risk Classification System
+
+✅ Scam Report Storage
+
+✅ Dashboard Statistics
+
+✅ Recent Activity Tracking
+
+✅ History Management
+
+✅ Responsive Frontend
+
+✅ User Profile Section
+
+---
+
+## Screenshots
+
+Project screenshots will be added after deployment.
+
+---
 
 ## Future Improvements
 
 * AI-Based Scam Detection
-* URL Scam Scanner
+* URL & Phishing Link Scanner
+* Email Scam Detection
 * Admin Dashboard
-* Advanced Risk Scoring
-* Data Visualization and Analytics
+* Advanced Risk Scoring Algorithm
+* Data Visualization Charts
+* Export Reports Feature
+* Machine Learning Integration
+
+---
+
+## Learning Outcomes
+
+Through this project I learned:
+
+* REST API Development
+* Authentication & Authorization
+* JWT Security
+* MongoDB Atlas Integration
+* Backend Architecture
+* Frontend & Backend Communication
+* Git & GitHub Workflow
+* Full-Stack Project Deployment
+
+---
 
 ## Author
 
 **Siddhi Dublish**
 
-Built as a learning project to strengthen full-stack web development skills and explore security-focused web applications.
+Full-Stack Security Focused Project built to strengthen backend development, authentication, database management, and real-world problem-solving skills.
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub.
